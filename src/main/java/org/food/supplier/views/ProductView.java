@@ -19,6 +19,8 @@ public class ProductView {
 	private String shortDesc;
 
 	private String longDesc;
+	
+	private String imageName;
 
 	public Integer getProductId() {
 		return productId;
@@ -84,6 +86,15 @@ public class ProductView {
 		this.longDesc = longDesc;
 	}
 	
+	
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
+	}
+
 	public static Product toEntity(ProductView productView){
 		Product prod = new Product();
 		prod.setCartDesc(productView.getCartDesc());
@@ -94,6 +105,7 @@ public class ProductView {
 		prod.setShortDesc(productView.getShortDesc());
 		prod.setSku(productView.getSku());
 		prod.setWeight(productView.getWeight());
+		prod.setImageName(productView.getImageName());
 		return prod;
 		
 	}
@@ -107,6 +119,7 @@ public class ProductView {
 		view.setShortDesc(product.getShortDesc());
 		view.setSku(product.getSku());
 		view.setWeight(product.getWeight());
+		view.setImageName(product.getImageName());
 		return view;
 		
 	}

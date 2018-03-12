@@ -1,5 +1,7 @@
 package org.food.supplier.rest;
 
+import java.util.List;
+
 import javax.ws.rs.core.MediaType;
 
 import org.food.supplier.views.ProductView;
@@ -17,4 +19,6 @@ public interface ProductEndPoint {
 	@RequestMapping(value="save", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON)
 	public Boolean getSaveProduct( ProductView productView);
 	
+	@RequestMapping(value="products", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON)
+	public List<ProductView> getAllProduct();
 }

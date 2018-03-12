@@ -42,6 +42,9 @@ public class Product {
 	
 	@Column(name="long_desc")
 	private String longDesc;
+	
+	@Column(name = "image_name")
+	private String imageName;
 
 	public Integer getProductId() {
 		return productId;
@@ -121,6 +124,14 @@ public class Product {
 
 	public void setLongDesc(String longDesc) {
 		this.longDesc = longDesc;
+	}
+
+	public String getImageName() {
+		return imageName;
+	}
+
+	public void setImageName(String imageName) {
+		this.imageName = imageName;
 	}
 
 
