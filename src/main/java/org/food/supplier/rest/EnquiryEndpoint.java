@@ -21,7 +21,7 @@ public interface EnquiryEndpoint {
 	@RequestMapping(value="getEnquiryByMobileOrEmail", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON)
 	public List<EnquiryView> getEnquiryBy(String mobile, String email);
 	
-	@RequestMapping(value="saveEnquiries", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON)
-	public Boolean saveEnquiries();
+	@RequestMapping(value="saveEnquiries", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON)
+	public Boolean saveEnquiries(EnquiryView enquiryView);
 	
 }
