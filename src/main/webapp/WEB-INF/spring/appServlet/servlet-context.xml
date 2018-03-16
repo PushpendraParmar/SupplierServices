@@ -41,8 +41,8 @@
 			<beans:list>
 				<beans:value>org.food.supplier.domain.User</beans:value>
 				<beans:value>org.food.supplier.domain.Product</beans:value>
-				<!-- <beans:value>org.food.supplier.domain.State</beans:value>
-				<beans:value>org.food.supplier.domain.Category</beans:value>
+				<beans:value>org.food.supplier.domain.Enquiry</beans:value>
+				<!--<beans:value>org.food.supplier.domain.Category</beans:value>
 				<beans:value>org.food.supplier.domain.UserRole</beans:value>
 				<beans:value>org.food.supplier.domain.City</beans:value>
 				<beans:value>org.food.supplier.domain.Country</beans:value>

@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
-//@Repository
+@Repository
 public class CountryDAOImpl implements CountryDAO{
 	
-//	@Autowired
-//	@Qualifier("hibernate3AnnotatedSessionFactory")
+	@Autowired
+	@Qualifier("hibernate3AnnotatedSessionFactory")
 	private SessionFactory sessionFactory;
 
 	@Override
