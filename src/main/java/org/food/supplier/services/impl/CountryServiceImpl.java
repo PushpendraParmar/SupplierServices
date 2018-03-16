@@ -3,11 +3,13 @@ package org.food.supplier.services.impl;
 import org.food.supplier.dao.CountryDAO;
 import org.food.supplier.domain.Country;
 import org.food.supplier.services.CountryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-//@Service
+@Service
 public class CountryServiceImpl implements CountryService{
 
-//	@Autowired
+	@Autowired
 	private CountryDAO countryDAO;
 	
 	@Override
