@@ -54,5 +54,12 @@ public class CartView {
 	public void setUserId(User userId) {
 		this.userId = userId;
 	}
+	@Override
+	public String toString() {
+		return "CartView [cartId=" + cartId + ", productId=" + productId + ", status=" + status + ", userId=" + userId
+				+ "]";
+	}
+	
+	
 	
 }
